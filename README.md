@@ -24,3 +24,7 @@
 
 线程安全 GUI 设计：
 底层扫描逻辑运行在独立线程中，通过 root.after 异步更新 UI 队列，确保即使在高强度网段扫描时，程序界面依然流畅不卡死。
+
+
+python -m PyInstaller --noconsole --onefile --name "SIP全能审计工具" --collect-all sipvicious --icon=logo.ico sip.py
+
